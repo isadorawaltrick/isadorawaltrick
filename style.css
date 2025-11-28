@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+.btn-topo {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.btn-topo:hover {
+    opacity: 1;
+    transform: translateY(-3px);
+}
+
+.btn-topo svg {
+    pointer-events: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Karla', sans-serif;
+    line-height: 1.3;
+}
+
+.destaque-titulo {
+    color: #E24D54;
+}
+
+.cabecalho {
+    background-color: #E24D54;
+    padding: 20px 17% 20px 12%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho__menu__link--titulo h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+}
+
+.cabecalho__menu__links {
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__menu__link {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cabecalho__menu__link:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 7% 12% 2% 12%;
+}
+
+.container_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 2% 12% 7% 12%;
+}
+
+.container_conteudo_titulo {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.container_sobre .container_conteudo_titulo {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.container_sobre .container_conteudo_texto {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.container_contato .container_conteudo_titulo {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 2px;
+}
+
+.container_contato .container_conteudo_texto {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.container_sobre {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_sobre_texto {
+    flex: 1;
+    min-width: 300px;
+}
+
+.container_sobre_imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.imagem_destaque {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+}
+
+
+.container_conteudo_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.container_conteudo_links_visual {
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: #E24D54;
+    border-radius: 8px;
+    border: 2px solid #E24D54;
+    border-style: double;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 16px;
+    transition: background-color 0.3s;
+}
+
+.container_conteudo_links_visual img {
+    width: 24px;
+    height: 24px;
+}
+
+.container_conteudo_links_visual:hover {
+    background-color: #E24D54;
+    color: white;
+}
+
+
+.container_experiencias {
+    background-color: #E24D54;
+    padding: 60px;
+    border-radius: 12px;
+}
+
+.lista_experiencias {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    color: white;
+    margin-top: 20px;
+}
+
+.container_habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px;
+    border-radius: 12px;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.container_habilidades_imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem_habilidades {
+    width: 615px;
+    height: 330px;
+    background-color: #d3d3d3;
+    border-radius: 8px;
+}
+
+.container_habilidades_texto {
+    flex: 1;
+}
+
+.lista_habilidades {
+    padding-left: 20px;
+    font-size: 24px;
+    line-height: 1.8;
+    margin-top: 16px;
+}
+
+.container_projetos_titulo {
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    color: white;
+    line-height: 135%;
+    background-color: #E24D54;
+    display: flex;
+    padding: 3% 60px;
+    margin-top: 58px;
+    align-self: stretch;
+    border-radius: 12px;
+}
+
+.container_projetos {
+    display: flex;
+    padding: 2% 12%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 0;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.container_projetos_conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 0;
+    align-self: stretch;
+}
+
+.projetos_box {
+    display: flex;
+    padding: 2% 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    background: #E24D54;
+    border-radius: 12px;
+}
+
+.projetos_box_box {
+    align-items: center;
+    display: flex;
+    padding: 2% 2%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    background: #E24D54;
+    border-radius: 12px;
+}
+
+.ilustracoes {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    justify-content: center;
+    line-height: 125%;
+    text-align: center;
+    padding-top: 4%;
+}
+
+.container_contato {
+    width: 100%;
+    background-color: #E24D54;
+    padding: 10px 12%;
+    text-align: center;
+    color: white;
+}
+
+.contato_icones {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.contato_icones svg {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.contato_icones svg:hover {
+    transform: scale(1.1);
+}
+
+.rodape {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        padding: 20px 5%;
+    }
+
+    .cabecalho__menu__links {
+        gap: 20px;
+    }
+
+    .container {
+        padding: 10% 6%;
+        gap: 60px;
+    }
+
+    .container_2 {
+        padding: 6%;
+        gap: 60px;
+    }
+
+    .container_habilidades {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .imagem_habilidades {
+        width: 100%;
+        height: auto;
+        max-width: 450px;
+    }
+
+    .container_sobre {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container_sobre_texto {
+        order: 2;
+    }
+
+    .container_sobre_imagem {
+        order: 1;
+    }
+
+    .container_conteudo_titulo {
+        font-size: 34px;
+    }
+
+    .container_sobre .container_conteudo_titulo {
+        font-size: 40px;
+    }
+
+    .container_conteudo_texto {
+        font-size: 20px;
+    }
+
+    .container_conteudo_links {
+        justify-content: center;
+    }
+
+    .container_conteudo_links_visual {
+        width: 200px;
+        font-size: 18px;
+    }
+
+    /* Projetos */
+    .container_projetos_conteudo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projetos_box {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .imagem_destaque {
+        margin-top: 15%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .cabecalho__menu {
+        gap: 10px;
+    }
+
+    .cabecalho__menu__links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .container_conteudo_links_visual {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .container_conteudo_links_visual svg {
+        display: none;
+    }
+
+    .container_sobre .container_conteudo_titulo {
+        font-size: 32px;
+    }
+
+    .container_sobre .container_conteudo_texto {
+        font-size: 18px;
+    }
+
+    .imagem_destaque {
+        max-width: 300px;
+        margin-top: 30%;
+
+    }
+
+    .container_habilidades {
+        padding: 24px;
+        text-align: left;
+    }
+
+    .lista_habilidades {
+        font-size: 20px;
+    }
+
+    .projetos_box {
+        max-width: 260px;
+    }
+
+    .container_projetos_titulo {
+        padding: 20px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .contato_icones svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .logo__item img {
+        height: 32px;
+        width: auto;
+    }
+
+    .cabecalho__menu__link {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__menu__link--titulo h2 {
+        font-size: 16px;
+    }
+
+    .container_sobre .container_conteudo_titulo {
+        font-size: 26px;
+    }
+
+    .container_sobre .container_conteudo_texto {
+        font-size: 16px;
+    }
+
+    .container_conteudo_links_visual {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .imagem_destaque {
+        max-width: 250px;
+        margin-top: 40%;
+    }
+}
+
+.menu-mobile {
+    display: none;
+    position: relative;
+}
+
+.hamburger {
+    width: 32px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+#menuToggle {
+    display: none;
+}
+
+.menu-mobile-links {
+    display: none;
+    flex-direction: column;
+    background-color: #E24D54;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 180px;
+    padding: 12px 0;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.menu-mobile-links a {
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.menu-mobile-links a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+#menuToggle:checked~.hamburger span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#menuToggle:checked~.hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+#menuToggle:checked~.hamburger span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+#menuToggle:checked~.menu-mobile-links {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+
+    .cabecalho__menu__links {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .cabecalho__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__menu__links {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Opcional: esconder menu-mobile em telas grandes */
+@media (min-width: 901px) {
+    .menu-mobile {
+        display: none;
+    }
+}
+
+.container__conteudo__lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 24px;
+    color: white;
+    margin-top: 20px;
+}
+
+.container_projetos_texto {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
